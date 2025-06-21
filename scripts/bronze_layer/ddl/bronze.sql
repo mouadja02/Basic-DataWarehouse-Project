@@ -128,7 +128,7 @@ OPTIONS (
 SELECT * FROM `internproject-461520.bronze_layer.erp_cust_az12` ORDER BY CID ASC LIMIT 100;
 
 -- ===== ERP LOCATION A101 =====
-CREATE OR REPLACE EXTERNAL TABLE `internproject-461520.bronze_layer.erp_loc_a101_external` (
+CREATE OR REPLACE EXTERNAL TABLE `internproject-461520.bronze_layer.erp_loc_a101` (
   cid STRING,
   cntry STRING
 )
@@ -139,7 +139,7 @@ OPTIONS (
 );
 
 -- Test the external table
-SELECT * FROM `internproject-461520.bronze_layer.erp_loc_a101_external` LIMIT 5;
+SELECT * FROM `internproject-461520.bronze_layer.erp_loc_a101` LIMIT 5;
 
 
 -- ===== ERP PX CAT G1V2 =====
